@@ -7,6 +7,6 @@ age=31;
 const birthYear=2004;
 // birthYear=2003;  // this will not work
 
-// var is not recommended to use
+// var is not recommended to use 
 var name1="shubham";
 name1="john";
