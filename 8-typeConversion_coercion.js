@@ -11,4 +11,4 @@ console.log("I am "+19+" years old");  // 19 is automatically converted number t
 console.log("22"-"4"-3);  // here (-) automatically convert string into number
 console.log("22"+"4"+3);  // it convert 3 to string then concatenate
 console.log("22"*"2");
-console.log("22"/"2");  // In both multiplication and division it automatically convertedd string to the number
+console.log("22"/"2");  // In both multiplication,division and substraction it automatically converted string to the number
