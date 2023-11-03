@@ -41,6 +41,9 @@ restaurant.orderDelivery({
 });
 // In objects order of elements does not matter
 const {nam,openingHours,categories}=restaurant;  // here name openingHours and categories are variables but the name of variables same as object from here we calling
+
+console.log("----1----");
+
 console.log(nam,openingHours,categories);
 // To give new variabble name
 const {
@@ -48,9 +51,11 @@ const {
     openingHours:hours,
     categories:tags,
 }=restaurant;
+console.log("----2----");
 console.log(restaurantName,hours,tags);
 
 const {menu=[],starterMenu:starter=[]}=restaurant; // making default values [] and renaming starterMenu as starter
+console.log("----3----");
 console.log(menu,starter);
 
 // MUTATING VARIABLES
