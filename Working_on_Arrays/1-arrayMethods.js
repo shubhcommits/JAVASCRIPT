@@ -305,3 +305,35 @@ console.log(firstWithdrawal);
 console.log(accounts);
 const account =accounts.find(acc=>acc.owner==='Shubham Maurya');
 console.log(account);
+
+
+// Some And every
+console.log(movements);
+
+// includes used for exact value to check
+console.log(movements.includes(70));
+
+// some is used to check for some CONDITIONS
+
+const anyDeposots=movements.some(mov =>mov>50000);  // if there is any value for which the conditions is true then it returns true
+console.log(anyDeposots);
+
+// EVERY
+
+console.log(movements.every(mov=>mov>0));
+console.log(account4.movements.every(mov=>mov>0));
+
+// Seperate call back function
+
+const deposit=mov=> mov>0;
+console.log(movements.some(deposit));
+console.log(movements.every(deposit));
+console.log(movements.filter(deposit));
+// this is useful to folllow dry principle
+
+// flat() method
+const arr3=[[1,2,3],[4,5,6],7,8];
+console.log(arr3.flat());  // this go one deep without defining inside how much deep to go
+
+const arrDeep=[[1,2],3,[4,[5,6]],7,8];
+console.log(arrDeep.flat(2));  // this goes deep how much we defined like there we have defined deep till 2 array
